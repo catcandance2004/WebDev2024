@@ -1,8 +1,9 @@
 import React from 'react'
+import './Navbar.css'
 
 const Layout = () => {
   return (
-    <div>
+    <div className='layout-container'>
       
     </div>
   )
