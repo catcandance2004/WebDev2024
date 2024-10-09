@@ -10,7 +10,7 @@ Students are expected to:
 Student Info
 =======================
 
-* Name: *YourNameHere*
-* ID: *YourIdHere*
-* Group ID: *Your Group ID here*
-* Project Name: *Your Project Name here*
+* Name: Pham Ngoc Lam
+* ID: 22BI13240
+* Group ID: Group 9
+* Project Name: Online Learning Website
