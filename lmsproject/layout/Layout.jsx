@@ -1,6 +1,5 @@
 import './Layout.css'
 import Navbar from "../components/Navbar/Navbar"
-import LandingPage from "../components/LandingPage/LandingPage"
 import { Outlet } from 'react-router'
 
 const Layout = () => {
@@ -10,9 +9,9 @@ const Layout = () => {
     {/* <header className='navbar'>
       logo---Home-Courses-About Us-Login
     </header> */}
-
     <Navbar />
-    <LandingPage/> 
+
+    {/* <LandingPage/>  */}
     <div className="outlet">
         <Outlet/>
     </div>
