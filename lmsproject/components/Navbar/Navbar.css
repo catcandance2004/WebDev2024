@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    font-family: "Montserrat", sans-serif;
+}
+
+.header{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: white;
+    align-items: center;
+}
+
+.top-half{
+    height: 50px;
+    padding: 10px 5%;
+}
+.top-left{
+    float: left;
+    display: flex;
+}
+
+.header hr{
+    padding: 0;
+    margin: 0;
+}
+
+/* Lower half navbar */
+.low-half{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 5%;
+    height: 60px;
+}
+.low-half a{
+    text-decoration: none;
+    color: #171347;
+}
+.logo{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 25px;
+    color: black;
+}
+
+.menu{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.menu button{
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20.8px;
+    color: #171347;
+
+}
+.navbar a{
+    position: relative;
+    margin-left: 40px;
+    font-size: 14px;
+    line-height: 18.2px;
+    color: #171347;
+    font-weight: 400;
+}
+
+.learn-button{
+    border: none;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18.2px;
+    background-color: #43D477;
+    color: white;
+    border-radius: 5px;
+}

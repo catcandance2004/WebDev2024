@@ -1,4 +1,4 @@
-import Landing from "../components/Landing.jsx";
+import Landing from "../components/LandingPage/LandingPage.jsx";
 import Login from "../components/Login.jsx";
 import Categories from "../components/Categories.jsx";
 import StudentCourse from "../components/StudentCourse.jsx";

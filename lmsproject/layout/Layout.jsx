@@ -1,14 +1,17 @@
 import './Layout.css'
+import Navbar from "../components/Navbar/Navbar"
 import { Outlet } from 'react-router'
 
 const Layout = () => {
   return (
     <div className="layout-container">
 
-    <header className='navbar'>
+    {/* <header className='navbar'>
       logo---Home-Courses-About Us-Login
-    </header>
+    </header> */}
+    <Navbar />
 
+    {/* <LandingPage/>  */}
     <div className="outlet">
         <Outlet/>
     </div>
