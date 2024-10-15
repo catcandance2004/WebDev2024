@@ -8,6 +8,12 @@ Students are expected to:
 
 # Student Info
 
+<<<<<<< HEAD
+* Name: Tạ Minh Hiếu
+* ID: 22BI13161
+* Group ID: 9
+* Project Name: Online Learning Platform
+=======
 - Name: Pham Ngoc Lam
 - ID: 22BI13240
 - Group ID: Group 9
@@ -15,3 +21,4 @@ Students are expected to:
 
 - Name: Can Minh Hien
 - ID: 22BI13154
+>>>>>>> fb13f586622038c012dd10e599708507787c74b2
