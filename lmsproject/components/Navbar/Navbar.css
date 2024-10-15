@@ -72,15 +72,12 @@
     font-weight: 400;
 }
 
-<<<<<<< HEAD
-=======
 .navbar a:hover{
     background-color: yellow;
     font-size: 18px;
     border-radius: 5px;
 }
 
->>>>>>> fb13f586622038c012dd10e599708507787c74b2
 .learn-button{
     border: none;
     padding: 10px;
@@ -90,8 +87,5 @@
     background-color: #43D477;
     color: white;
     border-radius: 5px;
-<<<<<<< HEAD
-=======
     margin-left: 40px;
->>>>>>> fb13f586622038c012dd10e599708507787c74b2
 }
