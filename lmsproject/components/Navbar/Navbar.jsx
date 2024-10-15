@@ -41,8 +41,9 @@ function Navbar() {
           </a>
 
           <div className="menu">
-            <button className="categories-button">Categories</button>
+            <a href="/course-categories"> <button className="categories-button">Categories</button></a>
             {/* <a href="">Categories</a> */}
+            {/* href: tạo liên kết trong html */}
 
             <nav className="navbar">
               <a href="">Home</a>
