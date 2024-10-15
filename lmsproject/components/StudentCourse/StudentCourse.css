@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.student-course{
+    height: 100vh;
+    background-image: linear-gradient(#04AA96 0%, #43D477 100%);
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.student-course-container{
+    width: 665px;
+    text-align: center;
+}
+.student-course-container h1{
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 66px;
+    color: white;
+}
+.student-course-container-description{
+    padding: 15px;
+}
+.student-course-container-description p{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    color: white;
+}
