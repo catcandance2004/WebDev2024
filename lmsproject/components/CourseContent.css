@@ -33,3 +33,15 @@
 .content-header, .content-body, .content-carousel {
   padding: 20px;
 }
+
+:where(.css-dev-only-do-not-override-1hpnbz2).ant-carousel .slick-prev, :where(.css-dev-only-do-not-override-1hpnbz2).ant-carousel .slick-next {
+  background-color: black;
+    border-radius: 5px;
+    color: white;
+    font-size: 6em;
+    opacity: 1;
+}
+
+:where(.css-dev-only-do-not-override-5wsri9).ant-carousel .slick-list  {
+  vertical-align: middle;
+}
