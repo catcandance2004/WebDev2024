@@ -4,7 +4,7 @@ import './Categories.css';
 function Categories() {
   const courses = [
     {
-      image: './src/assets/pics/pic-aws.svg',
+      icon: './src/assets/pics/pic-aws.svg',
       title: 'AWS Certified Solutions Architect',
       instructor: 'Lina Roberts',
       avatar: './src/assets/pics/pic-avatar.svg',
@@ -13,7 +13,7 @@ function Categories() {
       totalLessons: 10,
     },
     {
-      image: './src/assets/pics/pic-python.svg',
+      icon: './src/assets/pics/pic-python.svg',
       title: 'Python for Beginners',
       instructor: 'Lina Roberts',
       avatar: './src/assets/pics/pic-avatar.svg',
@@ -22,7 +22,7 @@ function Categories() {
       totalLessons: 10,
     },
     {
-      image: './src/assets/pics/pic-react.svg',
+      icon: './src/assets/pics/pic-react.svg',
       title: 'Mastering React Development',
       instructor: 'Lina Roberts',
       avatar: './src/assets/pics/pic-avatar.svg',
@@ -31,7 +31,7 @@ function Categories() {
       totalLessons: 10,
     },
     {
-      image: './src/assets/pics/pic-ux.svg',
+      icon: './src/assets/pics/pic-ux.svg',
       title: 'UX Design Fundamentals',
       instructor: 'Lina Roberts',
       avatar: './src/assets/pics/pic-avatar.svg',
@@ -40,7 +40,7 @@ function Categories() {
       totalLessons: 11,
     },
     {
-      image: './src/assets/pics/pic-marketing.svg',
+      icon: './src/assets/pics/pic-marketing.svg',
       title: 'Digital Marketing Strategies',
       instructor: 'Lina Roberts',
       avatar: './src/assets/pics/pic-avatar.svg',
@@ -48,6 +48,7 @@ function Categories() {
       lesson: 3,
       totalLessons: 8,
     },
+    
   ];
 
   const categories = [
@@ -63,41 +64,51 @@ function Categories() {
 
   return (
     <div className="categories-container">
-      {/* Course List */}
-      <section className="course-list">
-        <h2>Welcome back, ready for your next lesson?</h2>
-        <div className="course-cards">
+      <section className="course-section">
+        <div className="course-list-header">
+          <h2>Welcome back, ready for your next lesson?</h2>
+          <a href="#history" className="view-history">View history</a>
+        </div>  
+        <div className="course-list">
           {courses.map((course, index) => (
             <div key={index} className="course-card">
-              <img src={course.image} alt={course.title} className="course-image" />
+              <img src={course.icon} alt={course.title} className="course-icon" />
               <h3>{course.title}</h3>
               <div className="course-info">
                 <img src={course.avatar} alt={course.instructor} className="instructor-avatar" />
                 <span>{course.instructor}</span>
               </div>
               <div className="course-progress">
-                <progress value={course.progress} max="100"></progress>
+                <div className="progress-bar">
+                  <div className="progress" style={{ width: `${course.progress}%` }}></div>
+                </div>
                 <span>Lesson {course.lesson} of {course.totalLessons}</span>
               </div>
             </div>
           ))}
         </div>
-        <a href="#history" className="view-history">View history</a>
+        <div className="arrow-buttons">
+          <button className="arrow-btn left-btn">{'<'}</button>
+          <button className="arrow-btn right-btn">{'>'}</button>
+        </div>
       </section>
 
-      {/* Category List */}
-      <section className="category-list">
-        <h2>Choose a course from the top categories</h2>
+      <section className="category-section">
+        <h2>Choice favourite course from top category</h2>
         <div className="category-grid">
           {categories.map((category, index) => (
             <div key={index} className="category-card">
-              <div className="icon-container">
+              <div className="category-icon-container">
                 <img src={category.icon} alt={category.title} className="category-icon" />
               </div>
               <h3>{category.title}</h3>
               <p>{category.description}</p>
             </div>
           ))}
+        </div>
+        <div className="navigation-buttons">
+          <button className="nav-button prev">&lt;</button>
+          <button className="nav-button next">&gt;</button>
         </div>
       </section>
     </div>
