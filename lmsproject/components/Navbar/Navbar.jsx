@@ -1,4 +1,4 @@
-import "./navbar.css";
+import "./Navbar.css";
 import React from "react";
 // import category from "";
 
@@ -41,9 +41,7 @@ function Navbar() {
           </a>
 
           <div className="menu">
-            <a href="/course-categories"> <button className="categories-button">Categories</button></a>
-            {/* <a href="">Categories</a> */}
-            {/* href: tạo liên kết trong html */}
+            <button className="categories-button">Categories</button>
 
             <nav className="navbar">
               <a href="">Home</a>

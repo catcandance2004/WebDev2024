@@ -1,0 +1,107 @@
+:root {font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+  
+    color-scheme: #000;
+    background-color: #ffffff;
+  
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/*PART 1 nè*/
+.card_payment_page {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    border-radius: 12px;
+    background-color: #fff;
+    max-width: 600px;
+    padding: 32px;
+    border: 1px solid #000000;
+    display: grid;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+}
+
+label {
+    display: block;
+    margin: 10px 0px 4px; /*Top Right-Left Bottom*/
+    color: #0D0C22;
+    font-weight: 500;
+}
+
+input, select {
+    height: 52px;
+    width: 100%;
+    padding: 18px 20px; /*top-bot and right-left*/
+    transition: outline 200ms ease, box-shadow 200ms ease;
+    border: 2px solid #6b7280;
+    border-radius: 12px;
+    font-size: 16px;
+}
+
+input:focus,
+select:focus {
+  border: 1px solid #000;   
+  outline: 4px solid rgba(0,0,0,.1);
+}
+
+/* Define for the Select boxes */
+select {
+    padding: 0 20px;
+  }
+    
+/* Define the position for Ex.Date and CVV */
+.filled_group {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 24px;
+}
+    
+  /* Define for the Expiration Date */
+.filled_date {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+/*Confirm Button*/
+button {
+    margin-top: 30px;
+    height: 52px;
+    width: 100%;
+    border: 2px solid #6b7280;
+    border-radius: 12px;
+    font-size: 16px;
+}
+/*-----------------------------------------*/
+
+/*PART 2 nè*/
+.cart {
+    margin-left: 40px;
+    width: 400px;
+}
+
+.header {
+    color: #0D0C22;
+    font-weight: 500;
+}
+
+.payment_cart {
+    border-radius: 12px;
+    background-color: #ebf5ff;
+    padding: 20px;
+    border: 1px solid #000000;
+}
+
+.payment_course {
+    margin-top: 20px;
+}
