@@ -42,7 +42,6 @@ function Navbar() {
 
           <div className="menu">
             <button className="categories-button">Categories</button>
-
             <nav className="navbar">
               <a href="">Home</a>
               <a href="">Courses</a>
