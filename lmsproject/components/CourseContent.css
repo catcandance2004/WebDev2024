@@ -19,19 +19,70 @@
   overflow-x: hidden;
 }
 
-.back-btn, .nav-lesson, .nav-quiz {
+.lesson-card, .quiz-card {
+  display: flex;
   padding: 10px;
+  justify-content: space-between;
+  overflow: hidden;
+  background-color: orange;
+  border-radius: 10px;
+  margin-bottom: 3%;
 }
 
+.back-btn, .nav-lesson, .nav-quiz {
+  padding: 10px;
+  
+}
+
+.lc-title, .lc-time {
+  text-overflow: ellipsis;
+  max-width: 25ch;
+  white-space: nowrap;
+  overflow: hidden;
+}
 
 .cc-content {
   flex-basis: 85%;
   border: 1px solid black;
   overflow-y: auto;
+  background-color: #9DCCFF4D;
+  ;
+  ;
+}
+
+.content-header {
+  background-color:#49BBBD;
+  color: white;
 }
 
 .content-header, .content-body, .content-carousel {
   padding: 20px;
+}
+
+.cb-video {
+  border-radius: 10px;
+}
+
+.cb-paragraph {
+  font-size: 1.2em;
+  padding: 2%;
+  border-radius: 10px;
+  background-color: #F48C064D;
+  ;
+}
+
+.carousel-card {
+  text-align: center;
+  padding: 10px;
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: white;
+  gap: 10px;
+}
+
+.crs-thumbnail {
+  width: 99%;
+  border-radius: 10px;
 }
 
 :where(.css-dev-only-do-not-override-1hpnbz2).ant-carousel .slick-prev, :where(.css-dev-only-do-not-override-1hpnbz2).ant-carousel .slick-next {
