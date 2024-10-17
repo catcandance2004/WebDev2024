@@ -10,10 +10,10 @@ const Layout = () => {
       <div className="outlet">
         <Outlet />
       </div>
-
       <footer className="footer">This is footer</footer>
     </div>
   );
 };
 
 export default Layout;
+
