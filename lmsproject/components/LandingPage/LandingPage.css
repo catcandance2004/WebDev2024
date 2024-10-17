@@ -1,28 +1,194 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 .first-page{
-    height: 100vh;
-    background-image: linear-gradient(#04AA96 0%, #43D477 100%);
-    justify-content: center;
+    height: 111vh;
+    background-color: #49BBBD;
+    background-image: url(./images/teenage-girl-posing.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position-x: 850px;
+    background-position-y: 35px;
+    background-size: 650px;
     display: flex;
     align-items: center;
+    border-bottom-left-radius: 50% 10%;
+    border-bottom-right-radius: 50% 10%;
 }
 .first-page-container{
-    width: 665px;
-    text-align: center;
+    text-align:left;
+    width: 40%;
+    margin-top: -11vh;
+    margin-left: 140px;
 }
+
 .first-page-container h1{
+    font-family: "Poppins", sans-serif;
     font-weight: 700;
-    font-size: 44px;
-    line-height: 66px;
+    font-size: 45px;
+    line-height: px;
     color: white;
 }
+.first-page-container h1 > span {
+    color: orange;
+}
+
 .first-page-container-description{
-    padding: 15px;
+    width: 440px;
 }
 .first-page-container-description p{
+    font-family: "Nunito Sans", sans-serif;
     font-weight: 400;
     font-size: 20px;
-    line-height: 25px;
+    line-height: 35px;
     color: white;
+    margin-top: 2rem;
+}
+
+.first-page-button-tray{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+}
+.work-button{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    font-family: "Poppins", sans-serif;
+    margin-left: 35px;
+}
+.work-button button{
+    background: url(./images/Group.png);
+    background-size: 60px;
+    border: none;
+    height: 60px;
+    width: 60px;
+}
+.work-button p{
+    color: #252641;
+    margin: 0;
+    margin-left: 30px;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 400;
+}
+#join-button{
+    background-color: #FFFFFF4D;
+    border: none;
+    border-radius: 80px;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 60px;
+    width: 180px;
+}
+
+.stat-icon{
+    height: 125px;
+    margin-left: 84rem;
+    margin-bottom: 20rem;
+    position: absolute;
+}
+
+.card-icon{
+    height: 45px;
+    width: 45px;
+}
+
+#card1{
+    align-items: center; 
+    background-color: #FFFFFFCC;
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+    display: flex;
+    padding: 20px;
+    position: absolute;
+    margin-left: 50rem;
+    margin-bottom: 12rem;
+}
+#card1 img{
+    background-color: #23BDEE;
+    padding: 7.5px;
+    border-radius: 8px;
+}
+
+#card2{
+    align-items: center; 
+    background-color: #FFFFFFCC;
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+    display: flex;
+    padding: 20px;
+    position: absolute;
+    margin-left: 80rem;
+    margin-top: 5rem;
+}
+#card2 img{
+    background-color: #F88C3D;
+    padding: 7.5px;
+    border-radius: 8px;
+}
+
+#card3{
+    align-items: center; 
+    background-color: #FFFFFFCC;
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    position: absolute;
+    margin-left: 50rem;
+    margin-top: 20rem;
+}
+#card3 button{
+    background-color: #D8587E;
+    border: none;
+    border-radius: 80px;
+    color: white;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 40px;
+    margin-top: 15px;
+    width: 150px;
+}
+.card3-container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+#avatar{
+    background-image: url(./images/Ellipse.png);
+    background-position: center;
+    background-size: 45px;
+    position: relative;
+}
+#avatar img{
+    position: absolute;
+    height: 15px;
+    bottom: 0;
+    right: 0;
+}
+.card-text-box{
+    font-family: "Nunito Sans", sans-serif;
+    margin-left: 20px;
+    display:flex;
+    flex-direction: column;
+}
+.card-text-box h1{
+    margin: 0;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    color: #595959;
+}
+.card-text-box p{
+    margin: 0;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 20px;
+    color: #545567;
 }
