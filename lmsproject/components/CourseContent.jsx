@@ -6,8 +6,8 @@ import modelquizzes from "../data/modelquizzes.jsx";
 import "./CourseContent.css";
 
 const CourseContent = () => {
-  const [whatLesson, setWhatLesson] = useState(modellessons[0])
-  const [isLesson, setIsLesson] = useState(true)
+  const [whatLesson, setWhatLesson] = useState(modellessons[0]);
+  const [isLesson, setIsLesson] = useState(true);
 
   return (
     <div className="course-content-container">
@@ -19,7 +19,14 @@ const CourseContent = () => {
           <h4>Your lessons</h4>
           {modellessons.map((lesson, index) => {
             return (
-              <div onClick={()=>{setWhatLesson(lesson); setIsLesson(true)}} className="lesson-card" key={index}>
+              <div
+                onClick={() => {
+                  setWhatLesson(lesson);
+                  setIsLesson(true);
+                }}
+                className="lesson-card"
+                key={index}
+              >
                 <div className="lc-title">{lesson.title}</div>
                 <div className="lc-time">{lesson.time} mins</div>
               </div>
@@ -31,7 +38,14 @@ const CourseContent = () => {
           <h4>Your quizzes</h4>
           {modelquizzes.map((quiz, index) => {
             return (
-              <div onClick={()=>{setWhatLesson(quiz); setIsLesson(false)}} className="quiz-card" key={index}>
+              <div
+                onClick={() => {
+                  setWhatLesson(quiz);
+                  setIsLesson(false);
+                }}
+                className="quiz-card"
+                key={index}
+              >
                 <div className="qc-title">{quiz.title}</div>
                 <div className="qc-time">{quiz.time} mins</div>
               </div>
@@ -47,12 +61,22 @@ const CourseContent = () => {
         </div>
 
         <div className="content-body">
-          {isLesson && <video className="cb-video" src={whatLesson.video} width="100%" height="50%" controls="controls" autoPlay="true"/>
-          
-          }
-          <p className="cb-paragraph">
-            {whatLesson.content}
-          </p>
+          {isLesson && (
+            <>
+              <video
+                className="cb-video"
+                src={whatLesson.video}
+                width="100%"
+                height="50%"
+                controls="controls"
+                autoPlay={true}
+              />
+              <br />
+              <h3>What you will learn?</h3>
+              <br />
+              <p className="cb-paragraph">{whatLesson.content}</p>
+            </>
+          )}
         </div>
 
         <div className="content-carousel">
@@ -64,16 +88,19 @@ const CourseContent = () => {
             slidesToScroll={1}
           >
             {modellessons.map((carousel, index) => {
-            return (
-              <div className="carousel-card" key={index}>
-                <img className="crs-thumbnail" src="https://picsum.photos/240/150" alt="" />
-                <div className="crs-title">{carousel.title}</div>
-                <div className="crs-time">{carousel.time} mins</div>
-              </div>
-            );
-          })}
+              return (
+                <div className="carousel-card" key={index}>
+                  <img
+                    className="crs-thumbnail"
+                    src="https://picsum.photos/240/150"
+                    alt=""
+                  />
+                  <div className="crs-title">{carousel.title}</div>
+                  <div className="crs-time">{carousel.time} mins</div>
+                </div>
+              );
+            })}
           </Carousel>
-
         </div>
       </div>
     </div>
@@ -81,4 +108,3 @@ const CourseContent = () => {
 };
 
 export default CourseContent;
-

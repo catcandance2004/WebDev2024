@@ -1,6 +1,6 @@
 import "./Navbar.css";
+import { Link } from "react-router-dom";
 import React from "react";
-
 
 function Navbar() {
   return (
@@ -33,19 +33,23 @@ function Navbar() {
           <div className="top-right"></div>
         </div>
 
-        <hr />
-
         <div className="low-half">
-          <a href="/" className="logo">
+          <Link to={"/"} className="logo">
             LOGO
-          </a>
+          </Link>
 
           <div className="menu">
-            <button className="categories-button">Categories</button>
             <nav className="navbar">
-              <a href="">Home</a>
-              <a href="">Courses</a>
-              <a href="">Instructors</a>
+              <Link className="link" to={"/course-categories"}>Categories</Link>
+              <Link className="link" to={"/"}>
+                Home
+              </Link>
+              <Link className="link" to={"/course-categories"}>
+                Courses
+              </Link>
+              <Link className="link" to={"/"}>
+                Instructors
+              </Link>
             </nav>
           </div>
 

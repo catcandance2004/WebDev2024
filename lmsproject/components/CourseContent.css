@@ -54,7 +54,7 @@
 }
 
 .cc-nav {
-  flex-basis: 15%;
+  flex-basis: 20%;
   max-height: 100vh;
   border: 1px solid black;
   overflow-y: auto;
@@ -84,7 +84,7 @@
 }
 
 .cc-content {
-  flex-basis: 85%;
+  flex-basis: 80%;
   border: 1px solid black;
   overflow-y: auto;
   background-color: #9DCCFF4D;
@@ -111,6 +111,11 @@
   border-radius: 10px;
   background-color: #F48C064D;
   ;
+}
+
+:where(.css-dev-only-do-not-override-1hpnbz2).ant-carousel {
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .carousel-card {
