@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate} from "react-router-dom";
 import { Carousel } from "antd";
 import { IoMdArrowBack } from "react-icons/io";
 import modellessons from "../data/modellessons.jsx";
@@ -8,11 +9,12 @@ import "./CourseContent.css";
 const CourseContent = () => {
   const [whatLesson, setWhatLesson] = useState(modellessons[0]);
   const [isLesson, setIsLesson] = useState(true);
+  let navigate = useNavigate();
 
   return (
     <div className="course-content-container">
       <div className="cc-nav">
-        <button className="back-btn">
+        <button onClick={() => navigate(-1)} className="back-btn">
           <IoMdArrowBack /> Back
         </button>
         <div className="nav-lesson">
@@ -77,6 +79,27 @@ const CourseContent = () => {
               <p className="cb-paragraph">{whatLesson.content}</p>
             </>
           )}
+
+          {
+            !isLesson && (
+              <>
+              <div className="cb-quiz">
+                  <div className="quiz-question">
+                    <h5>Question:</h5>
+                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi consequuntur explicabo, dolorum doloribus natus, omnis dolor nesciunt architecto a et numquam dolorem labore, expedita voluptatem iste error iure soluta. Delectus!</span>
+                    <div className="answer">
+                      <input type="radio" name="" id="" />
+                      <input type="radio" name="" id="" />
+                      <input type="radio" name="" id="" />
+                      <input type="radio" name="" id="" />
+                    </div>
+                  </div>
+              </div>
+              </>
+            )
+          }
+
+
         </div>
 
         <div className="content-carousel">
