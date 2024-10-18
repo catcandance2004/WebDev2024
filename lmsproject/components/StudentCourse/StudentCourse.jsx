@@ -15,9 +15,15 @@ const StudentCourse = () => {
     <>
       <div className="app-container">
         
-      {/* Header with background image */}
+      {/* Header with background image and*/}
       <div className="header">
         <img src="../../images/course_student/course_background.svg" alt="Course Background Image" className="background-image" />
+        <div className="text-overlay">
+          <h1>Full Practice Exam | Learn Cloud Computing | Pass the AWS Certified Solutions Architect Associate Certification SAA-C03!</h1>
+          <p>Last updated October 2024</p>
+        </div>
+        
+        
         <div className="course-overview">
           <div className="tabs-container">
 
