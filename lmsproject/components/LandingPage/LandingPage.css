@@ -1,28 +1,310 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 .first-page{
-    height: 100vh;
-    background-image: linear-gradient(#04AA96 0%, #43D477 100%);
-    justify-content: center;
-    display: flex;
     align-items: center;
-}
-.first-page-container{
-    width: 665px;
-    text-align: center;
+    background-color: #49BBBD;
+    background-image: url(/images/landing_page//teenage-girl-posing.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position-x: 850px;
+    background-position-y: 35px;
+    background-size: 650px;
+    border-bottom-left-radius: 50% 10%;
+    border-bottom-right-radius: 50% 10%;
+    display: flex;
+    height: 111vh;
 }
 .first-page-container h1{
-    font-weight: 700;
-    font-size: 44px;
-    line-height: 66px;
     color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 4rem;
 }
-.first-page-container-description{
-    padding: 15px;
+
+.first-page-container h1{
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: px;
+}
+.first-page-container h1 > span {
+    color: orange;
+    text-shadow: 0 0 1.5px white;
 }
 .first-page-container-description p{
+    color: white;
+    font-family: "Nunito Sans", sans-serif;
     font-weight: 400;
     font-size: 20px;
-    line-height: 25px;
+    margin-top: 2rem;
+    line-height: 35px;
+}
+
+.first-page-button-tray{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+}
+.work-button{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    font-family: "Poppins", sans-serif;
+    margin-left: 35px;
+}
+.work-button button{
+    background: url(/images/landing_page/Group.png);
+    background-size: 60px;
+    border: none;
+    height: 60px;
+    width: 60px;
+}
+.work-button p{
+    color: #252641;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0;
+    margin-left: 30px;
+}
+.join-button{
+    background-color: #FFFFFF4D;
+    border: none;
+    border-radius: 80px;
     color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 60px;
+    width: 180px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+.join-button:hover{
+    background-color: orange;
+    transition-duration: 0.25s;
+}
+
+
+.card-icon{
+    height: 45px;
+    width: 45px;
+}
+.card-text-box{
+    display:flex;
+    flex-direction: column;
+    font-family: "Nunito Sans", sans-serif;
+    margin-left: 20px;
+}
+.card-text-box h1{
+    color: #595959;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0;
+    line-height: 30px;
+}
+.card-text-box p{
+    color: #545567;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0;
+    line-height: 20px;
+}
+
+.stat-icon{
+    height: 125px;
+    position: absolute;
+    margin-left: 84rem;
+    margin-bottom: 20rem;
+}
+
+#card1{
+    align-items: center; 
+    background-color: #FFFFFFCC;
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+    display: flex;
+    padding: 20px;
+    position: absolute;
+    margin-left: 50rem;
+    margin-bottom: 12rem;
+}
+#card1 img{
+    background-color: #23BDEE;
+    border-radius: 8px;
+    padding: 7.5px;
+}
+
+#card2{
+    align-items: center; 
+    background-color: #FFFFFFCC;
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+    display: flex;
+    padding: 20px;
+    position: absolute;
+    margin-left: 80rem;
+    margin-top: 5rem;
+}
+#card2 img{
+    background-color: #F88C3D;
+    padding: 7.5px;
+    border-radius: 8px;
+}
+
+#card3{
+    align-items: center; 
+    background-color: #FFFFFFCC;
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    position: absolute;
+    margin-left: 50rem;
+    margin-top: 20rem;
+}
+#card3 button{
+    background-color: #D8587E;
+    border: none;
+    border-radius: 80px;
+    color: white;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 40px;
+    margin-top: 15px;
+    width: 150px;
+}
+.card3-container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+#avatar{
+    background-image: url(/images/landing_page//Ellipse.png);
+    background-position: center;
+    background-size: 45px;
+    position: relative;
+}
+#avatar img{
+    position: absolute;
+    height: 15px;
+    bottom: 0;
+    right: 0;
+}
+
+
+.second-page{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.first-container h1{
+    color: #010514;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 60px;
+}
+.first-container p{
+    color: #010514CC;
+    font-size: 20px;
+    margin-top: 25px;
+    margin-bottom: 80px;
+    line-height: 35px;
+}
+.first-stat-container{
+    display: flex;
+    gap: 5rem;
+}
+.first-stat-container h1{
+    font-size: 4rem;
+    font-weight: 300;
+    background: linear-gradient(to right, #136CB5, #49BBBD);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+}
+.first-stat-container p{
+    font-size: 22px;
+    font-weight: 400;
+    color: #010514CC;
+    margin: 0;
+}
+
+.second-page{
+    padding: 0 0 9rem 0;
+}
+.second-container h1{
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 6rem;
+}
+.second-container p{
+    color: #696984;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 5rem;
+}
+#span1{
+    color: #2F327D;    
+}
+#span2{
+    color: #00CBB8;    
+}
+
+.second-stat-container{
+    display: flex;
+    gap: 10rem;
+}
+.second-stat-container-card{
+    align-items: center;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0px 10px 60px 0px #262D7614;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    max-width: 25rem;
+}
+.second-stat-container-card h2{
+    color: #2F327D;
+    font-weight: 500;
+    font-size: 25px;
+    margin-top: 30px;
+    margin-bottom: 25px;
+}
+.second-stat-container-card p{
+    color: #696984;
+    margin: 0;
+}
+
+.card-2-icon{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 4rem;
+    width: 4rem;
+}
+.card-2-icon img{
+    max-height: 35px;
+    width: auto;
+}
+.card1-2 div{
+    background-color: #5B72EE;
+    box-shadow: 0px 10px 40px 0px #363D880F;
+    border-radius: 50%;
+}
+.card2-2 div{
+    background-color: #00CBB8;
+    box-shadow: 0px 10px 40px 0px #363D880F;
+    border-radius: 50%;
 }
