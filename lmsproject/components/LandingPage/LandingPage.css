@@ -15,14 +15,12 @@
     display: flex;
     height: 111vh;
 }
-.first-page-container h1{
-    color: white;
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    font-size: 45px;
-    line-height: 4rem;
+.first-page-container{
+    text-align:left;
+    margin-top: -11vh;
+    margin-left: 140px;
+    width: 40%;
 }
-
 .first-page-container h1{
     color: white;
     font-family: "Poppins", sans-serif;
