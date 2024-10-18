@@ -1,14 +1,23 @@
+import Link from "antd/es/typography/Link"
 import "./StudentCourse.css"
 import React from 'react'
+import { useNavigate } from "react-router-dom"
 
 const StudentCourse = () => {
+  {/*Navigate to payment page*/}
+  const navigate = useNavigate();
+
+  const handleRedirect = () => {
+    navigate("/course-categories/course-student/payment");
+  };
+
   return (
     <>
       <div className="app-container">
         
       {/* Header with background image */}
       <div className="header">
-        <img src="../../images/course_background.svg" alt="Course Background Image" className="background-image" />
+        <img src="../../images/course_student/course_background.svg" alt="Course Background Image" className="background-image" />
         <div className="course-overview">
           <div className="tabs-container">
 
@@ -34,7 +43,7 @@ const StudentCourse = () => {
                   <h1>4 out of 5</h1>
                 </div>
                 <div>
-                  <img src="../../images/rating.svg" alt="Course Rating" className="rating" />
+                  <img src="../../images/course_student/rating.svg" alt="Course Rating" className="rating" />
                 </div>
                 <div>
                   <p>Top Rating</p>
@@ -88,7 +97,7 @@ const StudentCourse = () => {
             {/* Reviews */}
             <div className="review">
               <div className="user-info">
-                <img src="../../images/user_img.svg" alt="User" />
+                <img src="../../images/course_student/user_img.svg" alt="User" />
                 <div className="user-details">
                   <span className="user-name">Lina</span>
                   <div className="user-rating">⭐⭐⭐⭐</div>
@@ -102,7 +111,7 @@ const StudentCourse = () => {
 
             <div className="review">
               <div className="user-info">
-                <img src="../../images/user_img.svg" alt="User" />
+                <img src="../../images/course_student/user_img.svg" alt="User" />
                 <div className="user-details">
                   <span className="user-name">Lina</span>
                   <div className="user-rating">⭐⭐⭐⭐⭐</div>
@@ -117,15 +126,18 @@ const StudentCourse = () => {
         {/* Sidebar */}
         <div className="sidebar">
           <div className="price-container">
-            <img src="../../images/course_img.svg" alt="Course Image"/>
+            <img src="../../images/course_student/course_img.svg" alt="Course Image"/>
             <div className="price-content">
               <span className="new-price">$49.65</span>
-              <span className="old-price">$99.99</span>
+              <div className="old-price-container">
+                <span className="old-price">$99.99</span>
+                <span className="line"></span>
+              </div>
               <span className="discount">50% Off</span>
             </div>
             
             <p className="time-left">11 hours left at this price</p>
-            <button className="buy-button">Buy Now</button>
+            <button className="buy-button" onClick={handleRedirect}>Buy Now</button>
           </div>
 
           <hr/>
@@ -152,10 +164,17 @@ const StudentCourse = () => {
           <div className="share-course">
             <h3>Share this course</h3>
             <div className="social-icons">
-              <a href="#"><i className="fab fa-facebook"></i></a>
-              <a href="#"><i className="fab fa-twitter"></i></a>
-              <a href="#"><i className="fab fa-youtube"></i></a>
-              <a href="#"><i className="fab fa-instagram"></i></a>
+              <img src="../../images/course_student/icons/twitter.svg" alt="twitter" />
+
+              <img src="../../images/course_student/icons/facebook.svg" alt="twitter" />
+
+              <img src="../../images/course_student/icons/youtube.svg" alt="twitter" />
+
+              <img src="../../images/course_student/icons/instagram.svg" alt="twitter" />
+
+              <img src="../../images/course_student/icons/telegram.svg" alt="twitter" />
+
+              <img src="../../images/course_student/icons/whatsapp.svg" alt="twitter" />
             </div>
           </div>
         </div>
