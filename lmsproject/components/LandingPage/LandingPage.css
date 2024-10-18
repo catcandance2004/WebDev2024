@@ -116,7 +116,7 @@
 .stat-icon{
     height: 125px;
     position: absolute;
-    margin-left: 84rem;
+    margin-left: 80rem;
     margin-bottom: 20rem;
 }
 
@@ -145,7 +145,7 @@
     display: flex;
     padding: 20px;
     position: absolute;
-    margin-left: 80rem;
+    margin-left: 74rem;
     margin-top: 5rem;
 }
 #card2 img{
@@ -163,7 +163,7 @@
     flex-direction: column;
     padding: 20px;
     position: absolute;
-    margin-left: 50rem;
+    margin-left: 45rem;
     margin-top: 20rem;
 }
 #card3 button{
