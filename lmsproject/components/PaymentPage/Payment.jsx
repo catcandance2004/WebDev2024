@@ -9,29 +9,36 @@ function Payment() {
             image: './src/components/drawable/anniversary.png',
             value: "30%",
             title: "Two Years Anniversary",
-            subtitle: "To celebrate our anniversary, we discount 30% for every course in this October",
+            subtitle: "Celebrate our 2nd anniversary with us! Enjoy 15% off your purchase as our thanks for your support over the years. Let’s make this milestone memorable together!",
+        },
+
+        {
+            image: './src/components/drawable/anniversary.png',
+            value: "20%",
+            title: "Back-to-School",
+            subtitle: "Get ready for the new school year with our exclusive back-to-school promotion! Enjoy 20% off all courses. Don’t miss out on these great savings!",
         }
     ];
 
     return (
         <>
-            <section class="payment">
-                <form class="payment_form">
+            <section className="paymentpage">
+                <form className="payment_form">
                 <div>
-                    <label htmlFor="number">Card Number</label>
-                    <input id="c_number" type="number" required />
+                    <label className="label_payment" htmlFor="number">Card Number</label>
+                    <input className="input_payment" id="c_number" type="number" required />
                 </div>
 
                 <div>
-                    <label htmlFor="holder">Card Holder</label>
-                    <input id="c_holder" type="text" pattern="[A-Z a-z]" required />
+                    <label className="label_payment" htmlFor="holder">Card Holder</label>
+                    <input className="input_payment" id="c_holder" type="text" required />
                 </div>
 
                 <div class="filled_group">
                     <div>
-                        <label htmlFor="expiration_month">Expiration Month</label>
+                        <label className="label_payment" htmlFor="expiration_month">Expiration Month</label>
                         <div class="filled_date">
-                            <select id="expriration_month" required >
+                            <select className="select_payment" id="expriration_month" required >
                             <option disabled selected>Month</option>
                             <option>01</option>
                             <option>02</option>
@@ -47,7 +54,7 @@ function Payment() {
                             <option>12</option>
                             </select>
 
-                            <select id="expriration_year" required >
+                            <select className="select_payment" id="expriration_year" required >
                             <option disabled selected>Year</option>
                             <option>2024</option>
                             <option>2025</option>
@@ -66,13 +73,13 @@ function Payment() {
                     </div>
 
                     <div>
-                        <label htmlFor="cvv">CVV</label>
-                        <input id="cvv" type="number" min={0} max={999} required />
+                        <label className="label_payment" htmlFor="cvv">CVV</label>
+                        <input className="input_payment" id="cvv" type="number" min={0} max={999} required />
                     </div>
                 </div>
 
-                <div class="button_confirm">
-                    <button>Confirm Payment</button>
+                <div>
+                    <button class="button_confirm">Confirm Payment</button>
                 </div>
                 </form>
 
@@ -145,12 +152,12 @@ function Payment() {
                 </div>
             </section>
             
-            <section class="offers">
+            <section class="offerspage">
                 <div class="title">
                     <div class="header_offers">Top Education offers and deals for you...</div>
                     
                     <div class="see_all">
-                        <a href="">See All</a>
+                        <a className="a_payment" href="">See All</a>
                     </div>
                 </div>
 
@@ -162,8 +169,10 @@ function Payment() {
                             <div class="deals_value_box"> 
                                 <div class="deals_value">{deals.value}</div>
                             </div>
-                            <h1>{deals.title}</h1>
-                            <h4>{deals.subtitle}</h4>
+
+                            <div className="deals_title">{deals.title}</div>
+
+                            <div className="deals_subtitle">{deals.subtitle}</div>
                         </div>
                     ))}
                 </div>
