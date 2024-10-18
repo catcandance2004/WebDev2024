@@ -13,8 +13,13 @@ Students are expected to:
 - Group ID: Group 9
 - Project Name: Online Learning Website
 
+<<<<<<< HEAD
 - Name: Vu Hoang Lan
 - ID: 22BI13244
 
 - Name: Dinh Vu Anh
 - ID: 22BI13012
+=======
+- Name: Can Minh Hien
+- ID: 22BI13154
+>>>>>>> c362c57749ba515df9442f5d9c4110def8aa02c5

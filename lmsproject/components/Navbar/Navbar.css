@@ -72,6 +72,12 @@
     font-weight: 400;
 }
 
+.navbar a:hover{
+    background-color: yellow;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
 .learn-button{
     border: none;
     padding: 10px;
@@ -81,4 +87,5 @@
     background-color: #43D477;
     color: white;
     border-radius: 5px;
+    margin-left: 40px;
 }

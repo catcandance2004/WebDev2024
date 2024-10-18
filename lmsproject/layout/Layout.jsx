@@ -1,26 +1,19 @@
-import './Layout.css'
-import Navbar from "../components/Navbar/Navbar"
-import { Outlet } from 'react-router'
+import "./Layout.css";
+import Navbar from "../components/Navbar/Navbar";
+import { Outlet } from "react-router";
 
 const Layout = () => {
   return (
     <div className="layout-container">
-
-    {/* <header className='navbar'>
-      logo---Home-Courses-About Us-Login
-    </header> */}
-    <Navbar />
-
-    {/* <LandingPage/>  */}
-    <div className="outlet">
-        <Outlet/>
+      <Navbar />
+      {/* <LandingPage/>  */}
+      <div className="outlet">
+        <Outlet />
+      </div>
+      <footer className="footer">This is footer</footer>
     </div>
+  );
+};
 
-    <footer className='footer'>
-        This is footer
-    </footer>
-    </div>
-  )
-}
+export default Layout;
 
-export default Layout
