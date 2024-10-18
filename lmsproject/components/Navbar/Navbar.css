@@ -63,19 +63,18 @@
     color: #171347;
 
 }
-.navbar a{
+.navbar .link{
     position: relative;
     margin-left: 40px;
     font-size: 14px;
     line-height: 18.2px;
     color: #171347;
     font-weight: 400;
+    transition:  0.5s;
 }
 
-.navbar a:hover{
-    background-color: yellow;
-    font-size: 18px;
-    border-radius: 5px;
+.navbar .link:hover{
+    transform: scale(1.5);
 }
 
 .learn-button{
