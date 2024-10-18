@@ -1,9 +1,9 @@
 import LandingPage from "../components/LandingPage/LandingPage.jsx";
 import Login from "../components/Login.jsx";
-import Categories from "../components/Categories/Categories.jsx";
+import Categories from "../components/Categories.jsx";
 import StudentCourse from "../components/StudentCourse.jsx";
 import Payment from "../components/Payment.jsx";
-import CourseContent from "../components/CourseContent.jsx";
+import CourseContent from "../components/CourseContent/CourseContent.jsx";
 
 const privateRouter = [
   {

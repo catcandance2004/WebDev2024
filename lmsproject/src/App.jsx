@@ -2,6 +2,7 @@ import { publicRouter, privateRouter } from "../router/router.jsx";
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import Layout from "../layout/Layout.jsx";
+import StudentCourse from "../components/StudentCourse/StudentCourse.jsx";
 
 const App = () => {
   return (
