@@ -15,7 +15,7 @@ const StudentCourse = () => {
     <>
       <div className="app-container">
         
-      {/* Header with background image and*/}
+      {/* Header with background image and context*/}
       <div className="header">
         <img src="../../images/course_student/course_background.svg" alt="Course Background Image" className="background-image" />
         <div className="text-overlay">
