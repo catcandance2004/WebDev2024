@@ -2,47 +2,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 .first-page{
-    height: 111vh;
+    align-items: center;
     background-color: #49BBBD;
-    background-image: url(./images/teenage-girl-posing.png);
+    background-image: url(/images/landing_page//teenage-girl-posing.png);
     background-repeat: no-repeat;
     background-position: right;
     background-position-x: 850px;
     background-position-y: 35px;
     background-size: 650px;
-    display: flex;
-    align-items: center;
     border-bottom-left-radius: 50% 10%;
     border-bottom-right-radius: 50% 10%;
+    display: flex;
+    height: 111vh;
 }
-.first-page-container{
-    text-align:left;
-    width: 40%;
-    margin-top: -11vh;
-    margin-left: 140px;
+.first-page-container h1{
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 4rem;
 }
 
 .first-page-container h1{
+    color: white;
     font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-size: 45px;
     line-height: px;
-    color: white;
 }
 .first-page-container h1 > span {
     color: orange;
-}
-
-.first-page-container-description{
-    width: 440px;
+    text-shadow: 0 0 1.5px white;
 }
 .first-page-container-description p{
+    color: white;
     font-family: "Nunito Sans", sans-serif;
     font-weight: 400;
     font-size: 20px;
-    line-height: 35px;
-    color: white;
     margin-top: 2rem;
+    line-height: 35px;
 }
 
 .first-page-button-tray{
@@ -59,7 +57,7 @@
     margin-left: 35px;
 }
 .work-button button{
-    background: url(./images/Group.png);
+    background: url(/images/landing_page/Group.png);
     background-size: 60px;
     border: none;
     height: 60px;
@@ -67,13 +65,13 @@
 }
 .work-button p{
     color: #252641;
-    margin: 0;
-    margin-left: 30px;
-    font-family: Poppins;
+    font-family: "Poppins", sans-serif;
     font-size: 20px;
     font-weight: 400;
+    margin: 0;
+    margin-left: 30px;
 }
-#join-button{
+.join-button{
     background-color: #FFFFFF4D;
     border: none;
     border-radius: 80px;
@@ -83,18 +81,45 @@
     font-weight: 600;
     line-height: 60px;
     width: 180px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+.join-button:hover{
+    background-color: orange;
+    transition-duration: 0.25s;
 }
 
-.stat-icon{
-    height: 125px;
-    margin-left: 84rem;
-    margin-bottom: 20rem;
-    position: absolute;
-}
 
 .card-icon{
     height: 45px;
     width: 45px;
+}
+.card-text-box{
+    display:flex;
+    flex-direction: column;
+    font-family: "Nunito Sans", sans-serif;
+    margin-left: 20px;
+}
+.card-text-box h1{
+    color: #595959;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0;
+    line-height: 30px;
+}
+.card-text-box p{
+    color: #545567;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0;
+    line-height: 20px;
+}
+
+.stat-icon{
+    height: 125px;
+    position: absolute;
+    margin-left: 84rem;
+    margin-bottom: 20rem;
 }
 
 #card1{
@@ -110,8 +135,8 @@
 }
 #card1 img{
     background-color: #23BDEE;
-    padding: 7.5px;
     border-radius: 8px;
+    padding: 7.5px;
 }
 
 #card2{
@@ -161,7 +186,7 @@
     justify-content: center;
 }
 #avatar{
-    background-image: url(./images/Ellipse.png);
+    background-image: url(/images/landing_page//Ellipse.png);
     background-position: center;
     background-size: 45px;
     position: relative;
@@ -172,23 +197,114 @@
     bottom: 0;
     right: 0;
 }
-.card-text-box{
-    font-family: "Nunito Sans", sans-serif;
-    margin-left: 20px;
-    display:flex;
+
+
+.second-page{
+    align-items: center;
+    display: flex;
     flex-direction: column;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    margin-top: 5rem;
 }
-.card-text-box h1{
-    margin: 0;
-    font-size: 20px;
+
+.first-container h1{
+    color: #010514;
+    font-size: 45px;
     font-weight: 700;
-    line-height: 30px;
-    color: #595959;
+    line-height: 60px;
 }
-.card-text-box p{
+.first-container p{
+    color: #010514CC;
+    font-size: 20px;
+    margin-top: 25px;
+    margin-bottom: 80px;
+    line-height: 35px;
+}
+.first-stat-container{
+    display: flex;
+    gap: 5rem;
+}
+.first-stat-container h1{
+    font-size: 4rem;
+    font-weight: 300;
+    background: linear-gradient(to right, #136CB5, #49BBBD);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
     margin: 0;
-    font-size: 15px;
-    font-weight: 600;
-    line-height: 20px;
-    color: #545567;
+}
+.first-stat-container p{
+    font-size: 22px;
+    font-weight: 400;
+    color: #010514CC;
+    margin: 0;
+}
+
+.second-page{
+    padding: 0 0 9rem 0;
+}
+.second-container h1{
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 6rem;
+}
+.second-container p{
+    color: #696984;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 5rem;
+}
+#span1{
+    color: #2F327D;    
+}
+#span2{
+    color: #00CBB8;    
+}
+
+.second-stat-container{
+    display: flex;
+    gap: 10rem;
+}
+.second-stat-container-card{
+    align-items: center;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0px 10px 60px 0px #262D7614;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    max-width: 25rem;
+}
+.second-stat-container-card h2{
+    color: #2F327D;
+    font-weight: 500;
+    font-size: 25px;
+    margin-top: 30px;
+    margin-bottom: 25px;
+}
+.second-stat-container-card p{
+    color: #696984;
+    margin: 0;
+}
+
+.card-2-icon{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 4rem;
+    width: 4rem;
+}
+.card-2-icon img{
+    max-height: 35px;
+    width: auto;
+}
+.card1-2 div{
+    background-color: #5B72EE;
+    box-shadow: 0px 10px 40px 0px #363D880F;
+    border-radius: 50%;
+}
+.card2-2 div{
+    background-color: #00CBB8;
+    box-shadow: 0px 10px 40px 0px #363D880F;
+    border-radius: 50%;
 }
