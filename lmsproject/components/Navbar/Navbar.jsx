@@ -1,6 +1,6 @@
 import "./Navbar.css";
 import React from "react";
-// import category from "";
+
 
 function Navbar() {
   return (

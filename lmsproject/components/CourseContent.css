@@ -46,12 +46,6 @@
   :where(.css-dev-only-do-not-override-5wsri9).ant-carousel .slick-list  {
     vertical-align: middle;
   }
-=======
-  display: flex;
-  position: relative;
-  width: 100%;
-  height: 100vh;
-}
 
 .back-btn {
   background-color: transparent;
