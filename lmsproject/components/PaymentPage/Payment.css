@@ -1,34 +1,39 @@
-:root {font-family: 'Poppins', sans-serif;
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
     line-height: 1.5;
     font-weight: 400;
-  
-    color-scheme: #000;
+    margin: 0 auto;
+    color: #213547;
     background-color: #ffffff;
-  
 }
 
 * {
     box-sizing: border-box;
 }
 
-/*PART 1 nè*/
-.card_payment_page {
-    height: 100vh;
+
+/*SECTION 1: PAYMENT*/
+/*PART 1: Form to get the Credit Card's information*/
+body {
+    margin: 0;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    place-items: center;
+}
+
+.payment {
+    display: flex;
+    padding-top: 50px;
 }
 
 form {
     border-radius: 12px;
     background-color: #fff;
-    max-width: 600px;
+    width: 700px;
     padding: 32px;
     border: 1px solid #000000;
     display: grid;
     gap: 12px;
-    align-items: center;
-    justify-content: center;
+
 }
 
 label {
@@ -36,6 +41,7 @@ label {
     margin: 10px 0px 4px; /*Top Right-Left Bottom*/
     color: #0D0C22;
     font-weight: 500;
+    font-size:large;
 }
 
 input, select {
@@ -57,7 +63,7 @@ select:focus {
 /* Define for the Select boxes */
 select {
     padding: 0 20px;
-  }
+}
     
 /* Define the position for Ex.Date and CVV */
 .filled_group {
@@ -78,21 +84,32 @@ button {
     margin-top: 30px;
     height: 52px;
     width: 100%;
-    border: 2px solid #6b7280;
     border-radius: 12px;
-    font-size: 16px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #49bbbd;
+    color: #fff;
+    cursor: pointer;
+    transition: border-color 0.25s;
 }
-/*-----------------------------------------*/
+button:hover {
+    border-color: #000;
+    color: #000;
+}
 
-/*PART 2 nè*/
+/*PART 2: Shopping Cart*/
 .cart {
-    margin-left: 40px;
+    margin-left: 80px;
     width: 400px;
 }
 
-.header {
+.payment_card_header {
     color: #0D0C22;
     font-weight: 500;
+    font-size: large;
 }
 
 .payment_cart {
@@ -100,8 +117,129 @@ button {
     background-color: #ebf5ff;
     padding: 20px;
     border: 1px solid #000000;
+    display: grid;
+    gap: 12px;
+}
+
+.payment_in4 {
+    display: grid;
+    gap: 8px;
 }
 
 .payment_course {
-    margin-top: 20px;
+    display: flex;
+    gap: 12px;
+    padding-top: 5px;
+    align-items: center;
+}
+
+img {
+    border-radius: 12px;
+}
+
+.course_in4 {
+    max-width: 300px;
+}
+
+.course_name {
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.price {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.totalmoney {
+    font-size: 18px;
+    width: 100%;
+}
+
+.cart_element {
+    display: flex;
+}
+
+    .left {
+        width: 30%;
+    }
+
+    .right {
+        width: 70%;
+        display: inline-flex;
+        justify-content: end;
+    }
+        .value {
+            padding-right: 5px;
+        }
+
+        .unit {
+            display: grid;
+            justify-content: end;
+        }
+
+    .total {
+        font-weight: 600;
+        font-size: 20px;
+    }
+
+/*-----------------------------------------*/
+
+
+/* SECTION 2: OFFERS LIST*/
+/*PART 1: OFFERS HEADER*/
+.offers {
+    padding-top: 100px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+}
+
+.header_offers {
+    width: 90%;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.see_all {
+    width: 10%;
+    font-weight: 500;
+    font-size: 18px;
+    display: inline-flex;
+    justify-content: end;
+}
+
+a {
+    color: #49bbbd;
+}
+
+/*PART 2: OFFERS LIST*/
+.deals_card {
+    width: 30%;
+    height: 300px;
+    border-radius: 12px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+.deals_value_box {
+    width: 100px;
+    height: 100px;
+    font-size: 40px;
+    font-weight: 700;
+    background-color: #49bbbd;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+}
+
+.deals_value {
+    display: flex;
+    align-items: center;
+}
+
+h1, h4 {
+    color: #fff;
 }
