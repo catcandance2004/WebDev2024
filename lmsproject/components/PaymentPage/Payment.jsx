@@ -1,18 +1,7 @@
 import React from "react";
 import './Payment.css';
-import madimage from './drawable/madimage.jpg'
-import wadimage from './drawable/wadimage.jpg'
 
-function Payment() {
-    const deals = [
-        {
-            image: './src/components/drawable/anniversary.png',
-            value: "30%",
-            title: "Two Years Anniversary",
-            subtitle: "To celebrate our anniversary, we discount 30% for every course in this October",
-        }
-    ];
-
+const Payment = () => {
     return (
         <>
             <section className="payment">

@@ -15,12 +15,14 @@
     display: flex;
     height: 111vh;
 }
-.first-page-container{
-    text-align:left;
-    margin-top: -11vh;
-    margin-left: 140px;
-    width: 40%;
+.first-page-container h1{
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 4rem;
 }
+
 .first-page-container h1{
     color: white;
     font-family: "Poppins", sans-serif;
@@ -116,7 +118,7 @@
 .stat-icon{
     height: 125px;
     position: absolute;
-    margin-left: 80rem;
+    margin-left: 84rem;
     margin-bottom: 20rem;
 }
 
@@ -145,7 +147,7 @@
     display: flex;
     padding: 20px;
     position: absolute;
-    margin-left: 74rem;
+    margin-left: 80rem;
     margin-top: 5rem;
 }
 #card2 img{
@@ -163,7 +165,7 @@
     flex-direction: column;
     padding: 20px;
     position: absolute;
-    margin-left: 45rem;
+    margin-left: 50rem;
     margin-top: 20rem;
 }
 #card3 button{

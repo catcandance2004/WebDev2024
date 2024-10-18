@@ -4,23 +4,20 @@
 body {
     margin: 0;
     display: flex;
-    place-items: center;
-}
-
-.payment {
-    display: flex;
-    padding-top: 50px;
+    align-items: center;
+    justify-content: center;
 }
 
 form {
     border-radius: 12px;
     background-color: #fff;
-    width: 700px;
+    max-width: 600px;
     padding: 32px;
     border: 1px solid #000000;
     display: grid;
     gap: 12px;
-
+    align-items: center;
+    justify-content: center;
 }
 
 label {
@@ -28,7 +25,6 @@ label {
     margin: 10px 0px 4px; /*Top Right-Left Bottom*/
     color: #0D0C22;
     font-weight: 500;
-    font-size:large;
 }
 
 input, select {
@@ -50,7 +46,7 @@ select:focus {
 /* Define for the Select boxes */
 select {
     padding: 0 20px;
-}
+  }
     
 /* Define the position for Ex.Date and CVV */
 .filled_group {
@@ -71,32 +67,21 @@ button {
     margin-top: 30px;
     height: 52px;
     width: 100%;
+    border: 2px solid #6b7280;
     border-radius: 12px;
-    border: 1px solid transparent;
-    padding: 0.6em 1.2em;
-    font-size: 1em;
-    font-weight: 500;
-    font-family: inherit;
-    background-color: #49bbbd;
-    color: #fff;
-    cursor: pointer;
-    transition: border-color 0.25s;
+    font-size: 16px;
 }
-button:hover {
-    border-color: #000;
-    color: #000;
-}
+/*-----------------------------------------*/
 
-/*PART 2: Shopping Cart*/
+/*PART 2 nè*/
 .cart {
-    margin-left: 80px;
+    margin-left: 40px;
     width: 400px;
 }
 
-.payment_card_header {
+.header {
     color: #0D0C22;
     font-weight: 500;
-    font-size: large;
 }
 
 .payment_cart {
@@ -104,129 +89,8 @@ button:hover {
     background-color: #ebf5ff;
     padding: 20px;
     border: 1px solid #000000;
-    display: grid;
-    gap: 12px;
-}
-
-.payment_in4 {
-    display: grid;
-    gap: 8px;
 }
 
 .payment_course {
-    display: flex;
-    gap: 12px;
-    padding-top: 5px;
-    align-items: center;
-}
-
-img {
-    border-radius: 12px;
-}
-
-.course_in4 {
-    max-width: 300px;
-}
-
-.course_name {
-    font-weight: 500;
-    font-size: 17px;
-}
-
-.price {
-    font-weight: 500;
-    font-size: 20px;
-}
-
-.totalmoney {
-    font-size: 18px;
-    width: 100%;
-}
-
-.cart_element {
-    display: flex;
-}
-
-    .left {
-        width: 30%;
-    }
-
-    .right {
-        width: 70%;
-        display: inline-flex;
-        justify-content: end;
-    }
-        .value {
-            padding-right: 5px;
-        }
-
-        .unit {
-            display: grid;
-            justify-content: end;
-        }
-
-    .total {
-        font-weight: 600;
-        font-size: 20px;
-    }
-
-/*-----------------------------------------*/
-
-
-/* SECTION 2: OFFERS LIST*/
-/*PART 1: OFFERS HEADER*/
-.offers {
-    padding-top: 100px;
-}
-
-.title {
-    display: flex;
-    align-items: center;
-}
-
-.header_offers {
-    width: 90%;
-    font-size: 30px;
-    font-weight: 500;
-}
-
-.see_all {
-    width: 10%;
-    font-weight: 500;
-    font-size: 18px;
-    display: inline-flex;
-    justify-content: end;
-}
-
-a {
-    color: #49bbbd;
-}
-
-/*PART 2: OFFERS LIST*/
-.deals_card {
-    width: 30%;
-    height: 300px;
-    border-radius: 12px;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 20px;
-}
-
-.deals_value_box {
-    width: 100px;
-    height: 100px;
-    font-size: 40px;
-    font-weight: 700;
-    background-color: #49bbbd;
-    border-radius: 12px;
-    display: flex;
-    justify-content: center;
-}
-
-.deals_value {
-    display: flex;
-    align-items: center;
-}
-
-h1, h4 {
-    color: #fff;
+    margin-top: 20px;
 }
