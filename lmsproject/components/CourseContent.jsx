@@ -4,19 +4,25 @@ import { IoMdArrowBack } from "react-icons/io";
 import modellessons from "../data/modellessons.jsx";
 import modelquizzes from "../data/modelquizzes.jsx";
 import "./CourseContent.css";
+import { useNavigate } from "react-router";
 
 const CourseContent = () => {
   const [whatLesson, setWhatLesson] = useState(modellessons[0]);
   const [isLesson, setIsLesson] = useState(true);
+  const navigate = useNavigate();
+
+  const handleRedirect = () => {
+    navigate(-1);
+  };
 
   return (
     <div className="course-content-container">
       <div className="cc-nav">
-        <button className="back-btn">
+        <button onClick={handleRedirect} className="back-btn">
           <IoMdArrowBack />
         </button>
         <div className="nav-lesson">
-          <h4>Your lessons</h4>
+          <h4 className="lessons-title">Your lessons</h4>
           {modellessons.map((lesson, index) => {
             return (
               <div
@@ -35,7 +41,7 @@ const CourseContent = () => {
         </div>
 
         <div className="nav-quiz">
-          <h4>Your quizzes</h4>
+          <h4 className="quizzes-title">Your quizzes</h4>
           {modelquizzes.map((quiz, index) => {
             return (
               <div

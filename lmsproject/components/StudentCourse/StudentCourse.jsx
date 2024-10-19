@@ -29,7 +29,7 @@ const StudentCourse = () => {
           className="background-image" 
         />
         <div className="text-overlay">
-          <h1>{course.title}</h1>
+          <h1 className='course-title'>{course.title}</h1>
           <p>Last updated October 2024</p>
         </div>
         
