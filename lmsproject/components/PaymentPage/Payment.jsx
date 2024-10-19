@@ -19,10 +19,11 @@ function Payment() {
             subtitle: "Get ready for the new school year with our exclusive back-to-school promotion! Enjoy 20% off all courses. Don’t miss out on these great savings!",
         }
     ];
-
     return (
         <>
+
             <section className="paymentpage">
+
                 <form className="payment_form">
                 <div>
                     <label className="label_payment" htmlFor="number">Card Number</label>
@@ -34,11 +35,13 @@ function Payment() {
                     <input className="input_payment" id="c_holder" type="text" required />
                 </div>
 
-                <div class="filled_group">
+                <div className="filled_group">
                     <div>
-                        <label className="label_payment" htmlFor="expiration_month">Expiration Month</label>
-                        <div class="filled_date">
-                            <select className="select_payment" id="expriration_month" required >
+
+                        <label htmlFor="expiration_month">Expiration Month</label>
+                        <div className="filled_date">
+                            <select id="expriration_month" required >
+
                             <option disabled selected>Month</option>
                             <option>01</option>
                             <option>02</option>
@@ -78,71 +81,73 @@ function Payment() {
                     </div>
                 </div>
 
-                <div>
-                    <button class="button_confirm">Confirm Payment</button>
+
+                <div className="button_confirm">
+                    <button>Confirm Payment</button>
+
                 </div>
                 </form>
 
-                <div class="cart">
-                    <div class="payment_cart">
-                        <div class="payment_card_header">Payment Cart</div>
+                <div className="cart">
+                    <div className="payment_cart">
+                        <div className="payment_card_header">Payment Cart</div>
                         
-                        <div class="payment_in4">
-                            <div class="payment_course">
+                        <div className="payment_in4">
+                            <div className="payment_course">
                                 <img src={madimage} alt="MAD" height={90} width={90}/>
 
-                                <div class="course_in4">
-                                    <div class="course_name">Mobile Application Development</div>
-                                    <div class="lecturer">PhD. Tran Giang Son</div>
-                                    <div class="price">5.000.000 VND</div>
+                                <div className="course_in4">
+                                    <div className="course_name">Mobile Application Development</div>
+                                    <div className="lecturer">PhD. Tran Giang Son</div>
+                                    <div className="price">5.000.000 VND</div>
                                 </div>
                             </div>
 
-                            <div class="payment_course">
+                            <div className="payment_course">
                                 <img src={wadimage} alt="WAD" height={90} width={90}/>
 
-                                <div class="course_in4">
-                                    <div class="course_name">Web Application Development</div>
-                                    <div class="lecturer">MsC. Huynh Vinh Nam</div>
-                                    <div class="price">5.000.000 VND</div>
+                                <div className="course_in4">
+                                    <div className="course_name">Web Application Development</div>
+                                    <div className="lecturer">MsC. Huynh Vinh Nam</div>
+                                    <div className="price">5.000.000 VND</div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="totalmoney">
+                        <div className="totalmoney">
                             <hr />
-                            <div class="cart_element">
-                                <div class='left'>Subtotal</div>
-                                <div class="right">
-                                    <div class="value">10.000.000</div>
-                                    <div class="unit">VND</div>
+                            <div className="cart_element">
+                                <div className='left'>Subtotal</div>
+                                <div className="right">
+                                    <div className="value">10.000.000</div>
+                                    <div className="unit">VND</div>
                                 </div>
                             </div>
                             <hr />
 
-                            <div class="cart_element">
-                                <div class='left'>Discount</div>
-                                <div class="right">
-                                    <div class="value">0</div>
-                                    <div class="unit">%</div>
+                            <div className="cart_element">
+                                <div className='left'>Discount</div>
+                                <div className="right">
+                                    <div className="value">0</div>
+                                    <div className="unit">%</div>
                                 </div>
                             </div>
                             <hr />
 
-                            <div class="cart_element">
-                                <div class='left'>TAX</div>
-                                <div class="right">
-                                    <div class="value">10</div>
-                                    <div class="unit">%</div>
+                            <div className="cart_element">
+                                <div className='left'>TAX</div>
+                                <div className="right">
+                                    <div className="value">10</div>
+                                    <div className="unit">%</div>
                                 </div>
                             </div>
                             <hr />
 
-                            <div class="cart_element total">
-                                <div class='left'>TOTAL</div>
-                                <div class="right">
-                                    <div class="value">10.500.000</div>
-                                    <div class="unit">VND</div>
+                            <div className="cart_element total">
+                                <div className='left'>TOTAL</div>
+                                <div className="right">
+                                    <div className="value">10.500.000</div>
+                                    <div className="unit">VND</div>
                                 </div>
                             </div>
                             <hr />
@@ -151,23 +156,24 @@ function Payment() {
                     </div>
                 </div>
             </section>
-            
-            <section class="offerspage">
-                <div class="title">
-                    <div class="header_offers">Top Education offers and deals for you...</div>
+
+            <section className="offers">
+                <div className="title">
+                    <div className="header_offers">Top Education offers and deals for you...</div>
                     
-                    <div class="see_all">
-                        <a className="a_payment" href="">See All</a>
+                    <div className="see_all">
+                        <a href="">See All</a>
+
                     </div>
                 </div>
 
-                <div class="deals">
+                <div className="deals">
                     {deals.map((deals, index) => (
-                        <div key={index} class="deals_card" >
+                        <div key={index} className="deals_card" >
                         
 
-                            <div class="deals_value_box"> 
-                                <div class="deals_value">{deals.value}</div>
+                            <div className="deals_value_box"> 
+                                <div className="deals_value">{deals.value}</div>
                             </div>
 
                             <div className="deals_title">{deals.title}</div>

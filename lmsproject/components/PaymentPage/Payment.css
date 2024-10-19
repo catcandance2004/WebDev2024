@@ -1,3 +1,4 @@
+
 :root {
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
     line-height: 1.5;
@@ -17,23 +18,21 @@
 .paymentpage {
     margin-top: 100px;
     display: flex;
-    justify-content: center;
-}
 
-.payment {
-    display: flex;
-    padding-top: 50px;
+    align-items: center;
+    justify-content: center;
 }
 
 .payment_form {
     border-radius: 12px;
     background-color: #fff;
-    width: 700px;
+    max-width: 600px;
     padding: 32px;
     border: 1px solid #000000;
     display: grid;
     gap: 12px;
-
+    align-items: center;
+    justify-content: center;
 }
 
 .label_payment {
@@ -41,7 +40,6 @@
     margin: 10px 0px 4px; /*Top Right-Left Bottom*/
     color: #0D0C22;
     font-weight: 500;
-    font-size:large;
 }
 
 .input_payment, .select_payment {
@@ -63,7 +61,7 @@
 /* Define element in Select boxes */
 .select_payment {
     padding: 0 20px;
-}
+  }
     
 /* Define the position for Ex.Date and CVV */
 .filled_group {
@@ -84,8 +82,8 @@
     margin-top: 30px;
     height: 52px;
     width: 100%;
+    border: 2px solid #6b7280;
     border-radius: 12px;
-    border: 1px solid transparent;
     padding: 0.6em 1.2em;
     font-size: 1em;
     font-weight: 500;
@@ -98,18 +96,20 @@
 .button_confirm:hover {
     border-color: #000;
     color: #000;
-}
+    font-size: 16px;
 
-/*PART 2: Shopping Cart*/
+}
+/*-----------------------------------------*/
+
+/*PART 2 nè*/
 .cart {
-    margin-left: 80px;
+    margin-left: 40px;
     width: 400px;
 }
 
-.payment_card_header {
+.header {
     color: #0D0C22;
     font-weight: 500;
-    font-size: large;
 }
 
 .payment_cart {
@@ -117,16 +117,10 @@
     background-color: #ebf5ff;
     padding: 20px;
     border: 1px solid #000000;
-    display: grid;
-    gap: 12px;
-}
-
-.payment_in4 {
-    display: grid;
-    gap: 8px;
 }
 
 .payment_course {
+
     display: flex;
     gap: 12px;
     padding-top: 5px;
@@ -262,4 +256,6 @@ img {
     font-weight: 400;
     padding-top: 15px;
     text-align: justify;
+
+
 }

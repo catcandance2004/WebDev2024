@@ -13,7 +13,7 @@ const CourseContent = () => {
     <div className="course-content-container">
       <div className="cc-nav">
         <button className="back-btn">
-          <IoMdArrowBack /> Back
+          <IoMdArrowBack />
         </button>
         <div className="nav-lesson">
           <h4>Your lessons</h4>
