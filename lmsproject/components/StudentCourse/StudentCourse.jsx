@@ -12,6 +12,9 @@ const StudentCourse = () => {
     return <div>No course selected</div>;
   }
 
+  const handleCourseAccess = () => {
+    navigate("/course-categories/course-student/course-content");
+  }
   const handleRedirect = () => {
     navigate("/course-categories/course-student/payment");
   };
@@ -32,7 +35,7 @@ const StudentCourse = () => {
         
         <div className="course-overview">
           <div className="tabs-container">
-            <button className="tab">Overview</button>
+            <button onClick={handleCourseAccess} className="tab">Overview</button>
             <button className="tab">Q&A</button>
             <button className="tab">Announcements</button>
             <button className="tab active">Reviews</button>

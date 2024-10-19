@@ -1,5 +1,5 @@
 import LandingPage from "../components/LandingPage/LandingPage.jsx";
-import Login from "../components/Login.jsx";
+import Login from "../components/Login/Login.jsx";
 import Categories from "../components/Categories/Categories.jsx";
 import StudentCourse from "../components/StudentCourse/StudentCourse.jsx";
 import Payment from "../components/Payment.jsx";
