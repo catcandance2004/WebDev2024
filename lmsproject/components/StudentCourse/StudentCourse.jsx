@@ -104,7 +104,7 @@ const StudentCourse = () => {
                   <div className="user-rating">⭐⭐⭐⭐</div>
                 </div>
               </div>
-              <p>This course really helped me to pass my exam!...</p>
+              <p>This course really helped me to pass my exam! The SAA-C03 tests how the exam taker would assess and think on scenario based questions and I highly appreciate the effort Stephan has put in to build this module especially the hands-on exercises. Cheers!</p>
               <div className="review-time">🕒 3 Months</div>
             </div>
             
@@ -118,7 +118,7 @@ const StudentCourse = () => {
                   <div className="user-rating">⭐⭐⭐⭐⭐</div>
                 </div>
               </div>
-              <p>Best Course for this certification...</p>
+              <p>Best Course for this certification. I like the way all the information is nicely structured. I watched the entire course twice. Going through the course 2 times made me grasp much more information and also increased my confidence levels. </p>
               <div className="review-time">🕒 3 Months</div>
             </div>
           </div>

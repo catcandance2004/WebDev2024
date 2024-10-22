@@ -38,9 +38,9 @@ function Payment() {
                 <div className="filled_group">
                     <div>
 
-                        <label htmlFor="expiration_month">Expiration Month</label>
+                        <label className="label_payment" htmlFor="expiration_month">Expiration Month</label>
                         <div className="filled_date">
-                            <select id="expriration_month" required >
+                            <select className="select_payment" id="expriration_month" required >
 
                             <option disabled selected>Month</option>
                             <option>01</option>
